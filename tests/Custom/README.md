@@ -23,17 +23,20 @@ Welcome to the Custom Tests directory! This is where you can create and manage y
    5. Connect-Graph
    6. Connect-Maester
 
-   For special tests, make sure to alo connect to Microsoft Graph using:
-
+   For special tests, make sure to also connect to Microsoft Graph using:
+   
+   ```powershell
    Connect-Graph -Scopes "OrgSettings-Forms.Read.All"
+   ```
+   ```powershell
    Connect-Graph -Scopes "OrgSettings-AppsAndServices.Read.All"
-
-2. Move to tests:
+   ```
+3. Move to tests:
 
    ```powershell
    cd tests
 
-3. Run:
+4. Run:
 
    ```powershell
    Invoke-Maester -Path ./Custom
