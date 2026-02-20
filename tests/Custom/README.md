@@ -10,3 +10,30 @@ Welcome to the Custom Tests directory! This is where you can create and manage y
 
    ```powershell
    Invoke-Maester -Path ./Custom
+
+
+### Connection & Run Guide:
+
+1. Connection:
+
+   1. Connect-SPOService -Url https://datatreeag-admin.sharepoint.com
+   2. Connect-MicrosoftTeams
+   3. Connect-ExchangeOnline
+   4. Connect-IPPSSession
+   5. Connect-Graph
+   6. Connect-Maester
+
+   For special tests, make sure to alo connect to Microsoft Graph using:
+
+   Connect-Graph -Scopes "OrgSettings-Forms.Read.All"
+   Connect-Graph -Scopes "OrgSettings-AppsAndServices.Read.All"
+
+2. Move to tests:
+
+   ```powershell
+   cd tests
+
+3. Run:
+
+   ```powershell
+   Invoke-Maester -Path ./Custom
